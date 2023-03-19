@@ -40,6 +40,9 @@ $(document).ready(function(){
         },
         submitHandler: function(form) {
             console.log(form);
+            $('.formulario').each (function(){
+                this.submit();
+            })
         },
         invalidHandler: function(evento, validador) {
             let camposIncorretos = validador.numberOfInvalids();
