@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Gloock', serif;
+}
+
+header {
+    padding: 16px;
+    background-color: blanchedalmond;
+    border-bottom: 2px solid rgb(81, 37, 37);;
+    color: rgb(81, 37, 37);
+    font-size: 32px;
+    margin-bottom: 48px;
+}
+
+.container nav li {
+    display: inline;
+    padding: 8px;
+    list-style: none;
+}
+
+a {
+    font-size: 24px;
+    color: rgb(81, 37, 37);
+    text-decoration: none;
+}
+
+.sobre {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.sobre h2,.sobre p {
+    padding: 16px;
+    margin: 18px;
+    color: rgb(81, 37, 37);
+    border-bottom: 2px solid rgb(81, 37, 37);;
+    font-family: 'Gloock', serif;
+}
+
+.sobre img {
+    width: 320px;
+    height: 320px;
+}
+
+.produtos h2 {
+    margin: 55px;
+    font-family: 'Gloock', serif;
+    color: rgb(81, 37, 37);
+}
+
+.produto img {
+    width: 280px;
+    height: 400px;
+}
+
+
+.grade-produto ul {
+    display: grid;
+    grid-template-columns: repeat(4, 24.5%);
+    column-gap: 5%;
+    row-gap: 5%;
+    list-style: none;
+    color: rgb(81, 37, 37);
+}
+
+
+
+
+button {
+    margin: 16px;
+    background-color: blanchedalmond;
+    color:rgb(81, 37, 37);
+    width: 220px;
+    justify-items: center;
+    padding: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 767px){
+    .conteudo {
+        display: block;
+    }
+    
+    .container {
+        max-width: 90%;
+        display: block
+    }
+
+    header div.container {
+        flex-direction: column;
+    }
+
+    header a{
+        display:block;
+        font-size: 0.5em;
+    }
+
+    .sobre {
+        display: block;
+    }
+
+    .container .produtos ul {
+        display: block;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .produto li {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+
+    
+    .produto img{
+        width: 280px;
+        height: 400px;
+    }
+
+    .produto h3 {
+        margin: 8px;
+    }
+
+    button {
+        width: 50%;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+        
+    }
+    .grade-produto ul {
+        display: grid;
+        grid-template-columns: repeat(2, 32.6%);
+        column-gap: 2%;
+        row-gap: 5%;
+    }
+}
